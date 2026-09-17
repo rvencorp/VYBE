@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VYBE — a Gen-Z trend, community and marketplace platform.">
+  <title>VYBE — The Gen-Z Social Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">V</span><span>VYBE</span></div>
+
+    <div class="side-section">
+      <span class="side-label">DISCOVER</span>
+      <button class="nav active" data-target="home"><span>⌂</span> Home</button>
+      <button class="nav" data-target="explore"><span>⌕</span> Explore</button>
+      <button class="nav" data-target="community"><span>◉</span> Community</button>
+      <button class="nav" data-target="trends"><span>✦</span> Trends</button>
+      <button class="nav" data-target="market"><span>◇</span> Marketplace</button>
+    </div>
+
+    <div class="side-section">
+      <span class="side-label">YOUR SPACE</span>
+      <button class="nav" data-action="messages"><span>▢</span> Messages <b class="count">3</b></button>
+      <button class="nav" data-action="notifications"><span>♢</span> Notifications <b class="dot"></b></button>
+      <button class="nav" data-action="profile"><span>◎</span> Profile</button>
+    </div>
+
+    <div class="quick">
+      <span class="side-label">QUICK VYBES</span>
+      <button class="chip" data-filter="fashion"># fashion</button>
+      <button class="chip" data-filter="tech"># tech</button>
+      <button class="chip" data-filter="retro"># retro</button>
+      <button class="chip" data-filter="culture"># culture</button>
+    </div>
+
+    <div class="sidebar-bottom">
+      <div class="mini-profile">
+        <div class="avatar">AN</div>
+        <div><strong>anirban</strong><small>Creator · online</small></div>
+        <button class="more">•••</button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand"><span class="brand-mark">V</span> VYBE</div>
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="search" placeholder="Search trends, people, communities..." autocomplete="off">
+        <kbd>/</kbd>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="searchFocus" title="Search">⌕</button>
+        <button class="icon-btn notify-trigger" title="Notifications">♢<i></i></button>
+        <div class="top-avatar">AN</div>
+      </div>
+    </header>
+
+    <div id="toast" class="toast"></div>
+
+    <section id="home" class="page active-page">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> 01 Purpose</div>
+          <h1>The Gen-Z<br><em>Social Network.</em></h1>
+          <p>Where trends become conversations, communities become culture, and your feed actually feels like you.</p>
+          <div class="hero-actions">
+            <button class="primary" id="joinBtn">Join the VYBE <span>↗</span></button>
+            <button class="ghost" data-target="explore">Explore trends <span>→</span></button>
+          </div>
+          <div class="hero-meta"><span>● 18.4k online</span><span>•</span><span>42 communities active</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-tag tag-a">TRENDING NOW ↗</div>
+          <div class="hero-image"><img src="C:\Users\anirb\OneDrive\Pictures\Screenshots\WhatsApp Image 2026-09-14 at 17.41.19.jpeg"></div>
+          <div class="floating-card">
+            <span class="mini-kicker">THE 01 / VYBE</span>
+            <strong>Make your<br>world a trend.</strong>
+            <span class="arrow">↗</span>
+          </div>
+          <div class="hero-tag tag-b">NO ALGORITHM<br>WITHOUT YOU</div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <div><span class="section-num">02</span><h2>What's happening</h2></div>
+        <button class="text-btn" data-target="explore">View all ↗</button>
+      </div>
+
+      <div class="feed-grid">
+        <div class="feed-main">
+          <article class="post" data-tags="retro culture fashion">
+            <div class="post-head">
+              <div class="avatar coral">M</div>
+              <div><strong>maya.jpg</strong><small>2h · Kolkata</small></div>
+              <button class="more">•••</button>
+            </div>
+            <p class="post-text">Okay hear me out: <b>80s silhouettes are having a serious comeback.</b> Oversized denim, tucked tees, chunky watches. The old-school energy is back. ✦</p>
+            <div class="post-tags"><span>#80score</span><span>#retrofuture</span><span>#streetstyle</span></div>
+            <div class="post-photo"><img src="C:\Users\anirb\OneDrive\Pictures\Screenshots\WhatsApp Image 2026-09-14 at 17.41.19.jpeg"></div>
+            <div class="post-actions">
+              <button class="like">♡ <span>284</span></button><button class="comment">◯ <span>42</span></button><button>↗ <span>18</span></button><button class="save">♧</button>
+            </div>
+            <div class="comment-preview"><b>zoya.exe</b> this is SO back. give me a chunky watch + leather jacket rn</div>
+          </article>
+
+          <article class="post" data-tags="tech retro">
+            <div class="post-head">
+              <div class="avatar purple">K</div>
+              <div><strong>kian.codes</strong><small>5h · Bengaluru</small></div>
+              <button class="more">•••</button>
+            </div>
+            <p class="post-text">The <b>dumbphone revival</b> is no longer niche. People aren't anti-tech — they're pro-attention. Would you switch for a week?</p>
+            <div class="trend-card">
+              <div class="trend-img"><img src="C:\Users\anirb\OneDrive\Pictures\Screenshots\WhatsApp Image 2026-09-14 at 17.41.49.jpeg"></div>
+              <div><span class="mini-kicker">TREND RADAR · #004</span><h3>Less screen.<br>More scene.</h3><p>Searches +71% this month</p><button class="small-btn">See why ↗</button></div>
+            </div>
+            <div class="post-actions"><button class="like">♡ <span>391</span></button><button class="comment">◯ <span>77</span></button><button>↗ <span>31</span></button><button class="save">♧</button></div>
+          </article>
+        </div>
+
+        <aside class="feed-side">
+          <div class="side-card trend-radar">
+            <div class="card-title"><span><i class="live"></i> Trend Radar</span><button>•••</button></div>
+            <div class="radar-item"><span class="rank">01</span><div><b>Dumbphone revival</b><small>+71% · 4.2k posts</small></div><strong>↗</strong></div>
+            <div class="radar-item"><span class="rank">02</span><div><b>80s silhouettes</b><small>+54% · 2.8k posts</small></div><strong>↗</strong></div>
+            <div class="radar-item"><span class="rank">03</span><div><b>Analog watches</b><small>+38% · 1.9k posts</small></div><strong>↗</strong></div>
+            <div class="radar-item"><span class="rank">04</span><div><b>AI × personal style</b><small>+31% · 1.4k posts</small></div><strong>↗</strong></div>
+          </div>
+
+          <div class="side-card members">
+            <div class="card-title"><span>Members online</span><span class="green">●</span></div>
+            <div class="member-stack"><div>AK</div><div>R</div><div>S</div><div>N</div><div>+</div></div>
+            <h3>18,402</h3><p>people shaping the feed right now</p>
+            <button class="outline-full" data-target="community">Open community</button>
+          </div>
+
+          <div class="side-card marketplace-mini">
+            <div class="card-title"><span>Marketplace</span><button data-target="market">See all ↗</button></div>
+            <div class="market-mini-item"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=300&q=80" alt="Analog watch"><div><b>Steel Analog 01</b><small>₹2,899 · 12 left</small></div></div>
+            <div class="market-mini-item"><img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=300&q=80" alt="Vintage clothing"><div><b>Vintage varsity</b><small>₹1,699 · 8 left</small></div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="explore" class="page">
+      <div class="page-title"><div><span class="section-num">03</span><h2>Explore the VYBE</h2><p>Curated signals from the internet's most interesting corners.</p></div><button class="primary" id="trendSubmit">+ Post a trend</button></div>
+      <div class="filter-row"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="fashion">Fashion</button><button class="filter" data-filter="tech">Tech</button><button class="filter" data-filter="retro">Retro</button><button class="filter" data-filter="culture">Culture</button></div>
+      <div class="explore-grid">
+        <div class="explore-card big" data-tags="fashion retro"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85"><div><span>#01 · STYLE</span><h3>The new retro isn't nostalgic. It's intentional.</h3><p>Why Gen-Z is remixing the 80s instead of recreating it.</p></div></div>
+        <div class="explore-card" data-tags="retro tech"><img src="C:\Users\anirb\OneDrive\Pictures\Screenshots\WhatsApp Image 2026-09-14 at 17.41.49.jpeg"><div><span>#02 · TECH</span><h3>Can a dumbphone make you more creative?</h3><p>1,204 people are debating it.</p></div></div>
+        <div class="explore-card" data-tags="retro"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=85"><div><span>#03 · OBJECTS</span><h3>Analog time is back.</h3><p>Watches are becoming personal objects again.</p></div></div>
+        <div class="explore-card" data-tags="culture"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=85"><div><span>#04 · CULTURE</span><h3>Internet slang is moving offline.</h3><p>How “delulu” became a real-world vocabulary.</p></div></div>
+      </div>
+    </section>
+
+    <section id="community" class="page">
+      <div class="page-title"><div><span class="section-num">04</span><h2>Communities</h2><p>Find your people. Build the next niche.</p></div><button class="primary" id="createCommunity">+ Create community</button></div>
+      <div class="community-layout">
+        <div class="community-feature">
+          <div class="community-cover"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85"><span>12.8k members</span></div>
+          <div class="community-body"><span class="mini-kicker">FEATURED COMMUNITY</span><h2>Retro Future Club</h2><p>80s design, analog tech, synth culture and everything that feels better offline.</p><div class="avatars-line"><div>AK</div><div>MN</div><div>SR</div><div>+</div><button class="join-community">Join community ↗</button></div></div>
+        </div>
+        <div class="community-list">
+          <div class="community-row"><div class="community-icon">⌁</div><div><b>Streetwear India</b><small>8.4k · 284 online</small></div><button>Join</button></div>
+          <div class="community-row"><div class="community-icon">⌂</div><div><b>Build in Public</b><small>5.1k · 92 online</small></div><button>Join</button></div>
+          <div class="community-row"><div class="community-icon">✦</div><div><b>AI × Creativity</b><small>3.8k · 71 online</small></div><button>Join</button></div>
+          <div class="community-row"><div class="community-icon">◌</div><div><b>Slow Internet Club</b><small>2.2k · 36 online</small></div><button>Join</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trends" class="page">
+      <div class="page-title"><div><span class="section-num">05</span><h2>Trend Radar</h2><p>Signals before they become mainstream.</p></div><span class="radar-status"><i class="live"></i> LIVE DATA</span></div>
+      <div class="trend-board">
+        <div class="trend-large"><span class="mini-kicker">RISING FAST · +71%</span><h1>DUMB<br><em>PHONE</em><br>REVIVAL</h1><p>Less notification. More life. The feature-phone aesthetic is becoming a statement.</p><button class="primary">Open signal ↗</button></div>
+        <div class="trend-photo"><img src="C:\Users\anirb\OneDrive\Pictures\Screenshots\WhatsApp Image 2026-09-14 at 17.41.49.jpeg"><div>01 / OBJECT CULTURE</div></div>
+        <div class="trend-stat"><b>+54%</b><span>80s silhouettes</span><small>2.8k posts</small></div>
+        <div class="trend-stat"><b>+38%</b><span>Analog watches</span><small>1.9k posts</small></div>
+        <div class="trend-stat"><b>+31%</b><span>AI personal style</span><small>1.4k posts</small></div>
+      </div>
+    </section>
+
+    <section id="market" class="page">
+      <div class="page-title"><div><span class="section-num">06</span><h2>VYBE Marketplace</h2><p>Objects, drops and finds the community actually wants.</p></div><button class="ghost" id="sellBtn">Sell an item ↗</button></div>
+      <div class="product-grid">
+        <article class="product"><div class="product-img"><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=85"><span>12 left</span></div><div class="product-info"><div><b>Steel Analog 01</b><small>By time.studio</small></div><strong>₹2,899</strong></div><button class="buy">View item</button></article>
+        <article class="product"><div class="product-img"><img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=800&q=85"><span>8 left</span></div><div class="product-info"><div><b>Vintage Varsity</b><small>By archive.india</small></div><strong>₹1,699</strong></div><button class="buy">View item</button></article>
+        <article class="product"><div class="product-img"><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=85"><span>5 left</span></div><div class="product-info"><div><b>Retro Leather Jacket</b><small>By oldschool.co</small></div><strong>₹4,499</strong></div><button class="buy">View item</button></article>
+        <article class="product"><div class="product-img"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85"><span>19 left</span></div><div class="product-info"><div><b>Classic Black Dial</b><small>By analog.lab</small></div><strong>₹3,299</strong></div><button class="buy">View item</button></article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="rightbar">
+    <div class="right-title">VYBE / 09.26 <span>•••</span></div>
+    <div class="profile-card">
+      <div class="profile-cover"></div>
+      <div class="profile-avatar">AN</div>
+      <h3>anirban</h3><p>Creator · CSE · building in public</p>
+      <div class="profile-stats"><span><b>128</b> posts</span><span><b>2.4k</b> followers</span><span><b>14</b> communities</span></div>
+      <button class="outline-full" data-action="profile">View profile</button>
+    </div>
+
+    <div class="side-card weekly">
+      <div class="card-title"><span>Weekly pulse</span><span class="week">W37</span></div>
+      <div class="pulse-row"><div><span>Community</span><b>82%</b></div><div class="progress"><i style="width:82%"></i></div></div>
+      <div class="pulse-row"><div><span>Discovery</span><b>67%</b></div><div class="progress"><i style="width:67%"></i></div></div>
+      <div class="pulse-row"><div><span>Creator energy</span><b>91%</b></div><div class="progress"><i style="width:91%"></i></div></div>
+    </div>
+
+    <div class="side-card idea-card">
+      <span class="mini-kicker">HAVE A SIGNAL?</span><h3>Turn your idea<br>into a trend.</h3><p>Share something you're noticing. The community decides what happens next.</p><button class="primary full" id="ideaBtn">Post an idea ↗</button></div>
+    <div class="footer-note">VYBE © 2026 · Built for people, not metrics.</div>
+  </aside>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-close">×</button>
+    <span class="mini-kicker">NEW SIGNAL</span>
+    <h2>What are you noticing?</h2>
+    <p>Drop a trend, observation or idea. Keep it interesting.</p>
+    <textarea id="ideaText" placeholder="e.g. Analog watches are replacing smartwatches as fashion statements..."></textarea>
+    <div class="modal-footer"><span>Be specific. Be early.</span><button class="primary" id="publish">Publish signal ↗</button></div>
+  </div>
+</div>
+
+<div class="mobile-nav">
+  <button class="active" data-target="home">⌂<small>Home</small></button>
+  <button data-target="explore">⌕<small>Explore</small></button>
+  <button data-target="community">◉<small>Community</small></button>
+  <button data-target="market">◇<small>Market</small></button>
+  <button data-action="profile">◎<small>Profile</small></button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
